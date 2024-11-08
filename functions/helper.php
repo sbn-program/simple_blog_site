@@ -8,11 +8,11 @@ function redirect($url){
 }
 
 function asset($file){
-    return trim(BASE_URL, "/ ") . trim($file , "/ ");
+    return trim(BASE_URL, "/ ") . "/" . trim($file , "/ ");
 }
 
 function url($url){
-    return trim(BASE_URL, "/ ") . trim($url, "/ ");
+    return trim(BASE_URL, "/ ") . "/" . trim($url, "/ ");
 }
 
 function dd($obj){
