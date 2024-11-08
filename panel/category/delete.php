@@ -7,6 +7,9 @@
         $statement = $pdo->prepare($query);
         $statement->execute([$_GET['cat_id']]);
         redirect('panel/category');
+    } else{
+        redirect('panel/category');
     }
+
 
 ?>
